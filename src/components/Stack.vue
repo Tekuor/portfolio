@@ -6,7 +6,7 @@
       </div>
 
       <div class="h-auto -mt-9">
-        <div class="mx-40 stack-div flex flex-row h-screen">
+        <div class="mx-40 stack-div flex flex-row">
           <div class="w-1/2 mt-40 ml-14">
             <h4 class="stack-heading-text">
               Halo! Saya Dwinawan, seorand user interface Designer. Saat ini
