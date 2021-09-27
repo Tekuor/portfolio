@@ -5,7 +5,7 @@
         <h1 class="section-heading text-center">Projects</h1>
       </div>
       <div class="px-40 journey-text h-auto -mt-24 flex flex-col">
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-2">
           <div class="project-card" style="background: #fcddec;">
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
