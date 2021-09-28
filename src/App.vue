@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="h-full">
-    <TopNav />
-    <HeroSection />
-    <Journey />
-    <Projects />
-    <Stack />
+    <TopNav @goto="goto" />
+    <HeroSection id="hero" />
+    <Journey id="journey" />
+    <Projects id="projects" />
+    <Stack id="stack" />
   </div>
 </template>
 
@@ -23,6 +23,13 @@ export default {
     Journey,
     Projects,
     Stack,
+  },
+  methods: {
+    goto(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>

@@ -14,16 +14,24 @@
     <div
       class="font-bold md:font-normal links toggle hidden md:flex w-full md:w-auto text-center text-bold mt-5 md:mt-0 md:border-none"
     >
-      <a href="#" class="block md:inline-block px-3 py-3 md:border-none"
+      <a
+        @click="goto('hero')"
+        class="block md:inline-block px-3 py-3 md:border-none"
         >Home</a
       >
-      <a href="#" class="block md:inline-block px-3 py-3 md:border-none"
+      <a
+        @click="goto('journey')"
+        class="block md:inline-block px-3 py-3 md:border-none"
         >About</a
       >
-      <a href="#" class="block md:inline-block px-3 py-3 md:border-none"
+      <a
+        @click="goto('projects')"
+        class="block md:inline-block px-3 py-3 md:border-none"
         >Projects</a
       >
-      <a href="#" class="block md:inline-block px-3 py-3 md:border-none"
+      <a
+        @click="goto('contact')"
+        class="block md:inline-block px-3 py-3 md:border-none"
         >Contact</a
       >
     </div>
@@ -42,6 +50,9 @@ export default {
       for (let i = 0; i < navToggle.length; i++) {
         navToggle.item(i).classList.toggle("hidden");
       }
+    },
+    goto(id) {
+      this.$emit("goto", id);
     },
   },
 };
