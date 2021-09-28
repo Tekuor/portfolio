@@ -16,22 +16,22 @@
     >
       <a
         @click="goto('hero')"
-        class="block md:inline-block px-3 py-3 md:border-none"
+        class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
         >Home</a
       >
       <a
         @click="goto('journey')"
-        class="block md:inline-block px-3 py-3 md:border-none"
+        class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
         >About</a
       >
       <a
         @click="goto('projects')"
-        class="block md:inline-block px-3 py-3 md:border-none"
+        class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
         >Projects</a
       >
       <a
         @click="goto('contact')"
-        class="block md:inline-block px-3 py-3 md:border-none"
+        class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
         >Contact</a
       >
     </div>
