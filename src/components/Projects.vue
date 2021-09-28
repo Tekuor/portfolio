@@ -5,8 +5,8 @@
         <h1 class="section-heading text-center">Projects</h1>
       </div>
       <div class="px-40 journey-text h-auto -mt-24 flex flex-col">
-        <div class="grid grid-cols-2">
-          <div class="project-card" style="background: #fcddec;">
+        <div class="flex flex-row justify-center">
+          <div class="project-card mr-12" style="background: #fcddec;">
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,8 +49,10 @@
 
             <div class="project-image mx-6"></div>
           </div>
+        </div>
 
-          <div class="project-card" style="background: #FCF5DD;">
+        <div class="flex flex-row mt-12 justify-center">
+          <div class="project-card mr-12" style="background: #FCF5DD;">
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,7 +73,6 @@
 
             <div class="project-image mx-6"></div>
           </div>
-
           <div class="project-card" style="background: #EEFCDD;">
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
@@ -94,51 +95,6 @@
             <div class="project-image mx-6"></div>
           </div>
         </div>
-
-        <!-- <div class="flex flex-row justify-between mt-12">
-          <div class="project-card" style="background: #FCF5DD;">
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                >Live Demo</a
-              >
-              <a
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                >Code</a
-              >
-            </div>
-
-            <div class="project-image mx-6"></div>
-          </div>
-          <div class="project-card" style="background: #EEFCDD;">
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                >Live Demo</a
-              >
-              <a
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                >Code</a
-              >
-            </div>
-
-            <div class="project-image mx-6"></div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
