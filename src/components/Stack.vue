@@ -5,7 +5,7 @@
         <h1 class="stack-heading text-center">Stack & Tools</h1>
       </div>
 
-      <div class="h-auto -mt-9">
+      <div class="h-auto -mt-9 flex flex-row justify-center">
         <div class="mx-40 stack-div flex flex-row">
           <div class="w-1/2 mt-40 ml-14">
             <h4 class="stack-heading-text">
