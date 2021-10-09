@@ -4,7 +4,7 @@
       Enthused with data and it’s management, I took a dive into backend
       development and databases.
     </p>
-    <p class="second-text">I'm Matekuor, a backend dev.</p>
+    <p class="second-text">I'm Matekuor, a full stack dev.</p>
     <div class="name-div h-96 mt-10 p-10">
       <div class="flex flex-row">
         <div

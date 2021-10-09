@@ -25,6 +25,11 @@
         >About</a
       >
       <a
+        @click="goto('stack')"
+        class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
+        >Stack</a
+      >
+      <a
         @click="goto('projects')"
         class="block md:inline-block px-3 py-3 md:border-none cursor-pointer"
         >Projects</a

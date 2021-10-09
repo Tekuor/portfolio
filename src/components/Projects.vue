@@ -1,7 +1,7 @@
 <template>
   <div class="text-white py-14">
     <div class="flex flex-col">
-      <div class="w-full h-auto">
+      <div class="w-full h-auto" data-aos="fade-right">
         <h1 class="section-heading text-center">Projects</h1>
       </div>
       <div class="px-40 journey-text h-auto -mt-24 flex flex-col">
@@ -36,13 +36,17 @@
             </p>
             <div class="flex flex-row mx-6 mt-4">
               <a
+                href="https://unsplash-g.herokuapp.com/"
                 class="project-button p-2 cursor-pointer"
                 style="background:#9e71fc"
+                target="_blank"
                 >Live Demo</a
               >
               <a
+                href="https://github.com/Tekuor/unsplash"
                 class="project-button p-2 ml-4 cursor-pointer"
                 style="background: #D65CD6"
+                target="_blank"
                 >Code</a
               >
             </div>

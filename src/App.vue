@@ -2,9 +2,10 @@
   <div id="app" class="h-full">
     <TopNav @goto="goto" />
     <HeroSection id="hero" />
-    <Journey id="journey" />
+    <Journey id="journey" @goto="goto" />
     <Projects id="projects" />
     <Stack id="stack" />
+    <Contact id="contact" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeroSection from "@/components/HeroSection";
 import Journey from "@/components/Journey";
 import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
+import Contact from "@/components/Contact";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     Journey,
     Projects,
     Stack,
+    Contact,
   },
   methods: {
     goto(id) {
@@ -42,5 +45,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #3a2f52;
+  color: rgba(255, 255, 255, 0.1);
 }
 </style>

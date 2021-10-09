@@ -2,21 +2,29 @@
   <div class="text-white py-14">
     <div class="flex flex-col">
       <div class="w-full h-auto">
-        <h1 class="section-heading text-center">My journey</h1>
+        <h1 class="section-heading text-center">About me</h1>
       </div>
       <div class="px-40 journey-text h-auto -mt-32">
         <p>
-          Halo! Saya Dwinawan, seorand user interface Halo! Saya Dwinawan,
-          seorand user interface Designer. Saat ini tinggal di Surakarta
+          Hi, I'm Gifty Matekuor Mate-Kole - a full stack developer from Ghana.
+          I love creating apps that make processes simpler and have a positive
+          impact on people's lives.
         </p>
         <p class="mt-12">
-          Halo! Saya Dwinawan, seorand user interface Halo! Saya Dwinawan,
-          seorand user interface Designer. Saat ini tinggal di Surakarta
+          I began my tech journey in university where I studied Management
+          Information Systems. I have 3 years of work experience building web
+          apps. Through these experiences and taking online courses, I have
+          acquired knowledge in Javascript, PHP and other languages and
+          frameworks listed in my
+          <span class="cursor-pointer underline" style="color: #D65CD6"
+            ><a @click="goto('stack')">tech stack</a></span
+          >. I also have some experience building hybrid mobile apps with
+          Nativescript-Vue.
         </p>
 
         <p class="mt-12">
-          Halo! Saya Dwinawan, seorand user interface Halo! Saya Dwinawan,
-          seorand user interface Designer. Saat ini tinggal di Surakarta
+          When I’m not coding, I can be found baking, crocheting, reading or
+          watching movies.
         </p>
       </div>
     </div>
@@ -24,7 +32,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goto(id) {
+      this.$emit("goto", id);
+    },
+  },
+};
 </script>
 
 <style>
