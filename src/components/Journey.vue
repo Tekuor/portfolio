@@ -4,7 +4,7 @@
       <div class="w-full h-auto">
         <h1 class="section-heading text-center">About me</h1>
       </div>
-      <div class="px-40 journey-text h-auto -mt-32">
+      <div class="md:px-40 journey-text h-auto md:-mt-32 px-8">
         <p>
           Hi, I'm Gifty Matekuor Mate-Kole - a full stack developer from Ghana.
           I love creating apps that make processes simpler and have a positive
@@ -52,5 +52,12 @@ export default {
 .journey-text {
   font-weight: 300;
   font-size: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-heading {
+    font-weight: 900;
+    font-size: 64px;
+  }
 }
 </style>

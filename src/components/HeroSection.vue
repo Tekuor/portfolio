@@ -1,11 +1,11 @@
 <template>
-  <div class="pt-32 pb-12 h-full md:px-40 text-white">
-    <p class="first-text">
-      Enthused with data and it’s management, I took a dive into backend
-      development and databases.
-    </p>
+  <div class="pt-32 pb-12 h-full md:px-40 text-white md:text-left text-center">
     <p class="second-text">I'm Matekuor, a full stack dev.</p>
-    <div class="name-div h-96 mt-10 p-10">
+    <p class="first-text">
+      Building efficient software that have positive impact on businesses and
+      customers.
+    </p>
+    <div class="name-div min-h-96 mt-10 p-10">
       <div class="flex flex-row">
         <div
           class="rounded-full h-8 w-8"
@@ -35,7 +35,7 @@
         style="border-top: 1px solid rgba(255, 255, 255, 0.25)"
         class="mt-10"
       >
-        <div class="flex flex-row justify-between mt-8">
+        <div class="flex md:flex-row flex-col justify-between mt-8">
           <div class="md:mt-5">
             <p class="audio-text">
               <span style="color: #9E71FC; font-weight: bold">27 audios</span>
@@ -43,7 +43,7 @@
             </p>
           </div>
 
-          <div class="record-div">
+          <div class="record-div md:mt-0 mt-8">
             <div class="flex flex-row mt-4 mx-3">
               <div
                 class="rounded-full h-9 w-9"
@@ -97,7 +97,6 @@ export default {};
 }
 
 .record-div {
-  width: 351px;
   min-height: 64px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -107,6 +106,16 @@ export default {};
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .audio-text {
+    font-size: 12px;
+  }
+
+  .record-text {
+    font-size: 12px;
+  }
 }
 
 .record-text {

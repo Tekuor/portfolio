@@ -4,9 +4,14 @@
       <div class="w-full h-auto" data-aos="fade-right">
         <h1 class="section-heading text-center">Projects</h1>
       </div>
-      <div class="px-40 journey-text h-auto -mt-24 flex flex-col">
-        <div class="flex flex-row justify-center">
-          <div class="project-card mr-12" style="background: #fcddec;">
+      <div
+        class="md:px-40 journey-text h-auto md:-mt-24 flex flex-col items-center"
+      >
+        <div class="flex md:flex-row flex-col justify-center">
+          <div
+            class="project-card md:mr-12 md:mb-0 mb-10"
+            style="background: #fcddec;"
+          >
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -25,7 +30,7 @@
               >
             </div>
 
-            <div class="project-image mx-6"></div>
+            <div class="project-image mx-6 mt-14"></div>
           </div>
 
           <div class="project-card" style="background: #F0DDFC;">
@@ -51,12 +56,15 @@
               >
             </div>
 
-            <div class="project-image mx-6"></div>
+            <div class="project-image mx-6 mt-14"></div>
           </div>
         </div>
 
-        <div class="flex flex-row mt-12 justify-center">
-          <div class="project-card mr-12" style="background: #FCF5DD;">
+        <div class="flex md:flex-row flex-col mt-12 justify-center">
+          <div
+            class="project-card md:mr-12 md:mb-0 mb-10"
+            style="background: #FCF5DD;"
+          >
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
             <p class="mt-2 mx-6 project-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -75,7 +83,7 @@
               >
             </div>
 
-            <div class="project-image mx-6"></div>
+            <div class="project-image mx-6 mt-14"></div>
           </div>
           <div class="project-card" style="background: #EEFCDD;">
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
@@ -96,7 +104,7 @@
               >
             </div>
 
-            <div class="project-image mx-6"></div>
+            <div class="project-image mx-6 mt-14"></div>
           </div>
         </div>
       </div>
@@ -110,8 +118,8 @@ export default {};
 
 <style>
 .project-card {
-  width: 445px;
-  height: 559px;
+  max-width: 445px;
+  min-height: 559px;
   border-radius: 16px;
 }
 
@@ -139,10 +147,16 @@ export default {};
 }
 
 .project-image {
-  width: 381px;
+  max-width: 381px;
   height: 300px;
   background: #ebebeb;
   border-radius: 8px 8px 0px 0px;
-  margin-top: 52px;
+}
+
+@media only screen and (max-width: 700px) {
+  /* .project-heading {
+    font-weight: 900;
+    font-size: 64px;
+  } */
 }
 </style>
