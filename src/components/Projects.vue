@@ -5,11 +5,11 @@
         <h1 class="section-heading text-center">Projects</h1>
       </div>
       <div
-        class="md:px-40 journey-text h-auto md:-mt-24 flex flex-col items-center"
+        class="lg:px-40 journey-text h-auto lg:-mt-24 flex flex-col items-center"
       >
-        <div class="flex md:flex-row flex-col justify-center">
+        <div class="flex lg:flex-row flex-col justify-center">
           <div
-            class="project-card md:mr-12 md:mb-0 mb-10"
+            class="project-card lg:mr-12 lg:mb-0 mb-10"
             style="background: #fcddec;"
           >
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
@@ -60,9 +60,9 @@
           </div>
         </div>
 
-        <div class="flex md:flex-row flex-col mt-12 justify-center">
+        <div class="flex lg:flex-row flex-col mt-12 justify-center">
           <div
-            class="project-card md:mr-12 md:mb-0 mb-10"
+            class="project-card lg:mr-12 lg:mb-0 mb-10"
             style="background: #FCF5DD;"
           >
             <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>

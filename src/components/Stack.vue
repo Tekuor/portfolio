@@ -5,20 +5,20 @@
         <h1 class="stack-heading text-center">Stack & Tools</h1>
       </div>
 
-      <div class="h-auto md:-mt-9 flex flex-row justify-center">
+      <div class="h-auto lg:-mt-9 flex flex-row justify-center">
         <div
-          class="md:mx-40 mx-4 stack-div flex md:flex-row flex-col md:items-start items-center"
+          class="lg:mx-40 mx-4 stack-div flex lg:flex-row flex-col lg:items-start items-center"
         >
           <div
-            class="md:w-2/5 md:mt-56 md:ml-14 md:mr-8 mt-4 mx-4 md:mb-0 mb-14 md:text-left text-center"
+            class="lg:w-2/5 lg:mt-56 lg:ml-14 lg:mr-8 mt-4 mx-4 lg:mb-0 mb-14 lg:text-left text-center"
           >
-            <h4 class="stack-heading-text md:mt-0 mt-6">
+            <h4 class="stack-heading-text lg:mt-0 mt-6">
               Programming languages and frameworks I have used to build
               projects.
             </h4>
           </div>
-          <div class="md:-mt-10">
-            <div class="stack-box p-6 md:z-10 md:absolute">
+          <div class="lg:-mt-10">
+            <div class="stack-box p-6 lg:z-10 lg:absolute">
               <h4 class="stack-title">Front-end stack</h4>
               <div class="flex flex-row flex-wrap justify-between mt-6">
                 <div class="stack-div-indv flex flex-row">
@@ -48,7 +48,7 @@
               </div>
             </div>
             <div
-              class="stack-box p-6 md:z-20 md:mt-56 md:ml-24 md:absolute md:my-0 my-10"
+              class="stack-box p-6 lg:z-20 lg:mt-56 lg:ml-24 lg:absolute lg:my-0 my-10"
             >
               <h4 class="stack-title">Back-end stack</h4>
               <div class="flex flex-row flex-wrap justify-between mt-6">

@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex md:flex-row flex-col md-mx-16 mx-0 pb-20 flex-wrap items-center"
+    class="flex lg:flex-row flex-col md-mx-16 mx-0 pb-20 flex-wrap items-center"
   >
-    <div class="md:mr-14 md:ml-12 md:w-2/5">
-      <p class="contact-heading md:text-left text-center">Contact me</p>
+    <div class="lg:mr-14 lg:ml-12 lg:w-2/5">
+      <p class="contact-heading lg:text-left text-center">Contact me</p>
     </div>
-    <div>
+    <div class="w-2/5">
       <form name="contact">
         <div class="contact-div p-8">
           <input
@@ -38,7 +38,12 @@
             v-model="message"
           ></textarea>
 
-          <button @click="sendMessage" id="sendBtn" class="mt-6" type="button">
+          <button
+            @click="sendMessage"
+            id="sendBtn"
+            class="mt-6 w-full"
+            type="button"
+          >
             Send
           </button>
         </div>
@@ -108,8 +113,6 @@ input:focus {
 }
 
 #sendBtn {
-  width: 490px;
-  min-width: 200px;
   min-height: 43px;
   border-radius: 8px;
   background: #d65cd6;
