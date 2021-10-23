@@ -4,12 +4,22 @@
   >
     <div class="logo">Matekuor</div>
 
-    <!-- <div class="flex md:hidden">
-          <button id="hamburger" @click="show()">
-            <img class="toggle block" src="@/assets/menu.svg" width="40" height="40" />
-            <img class="toggle hidden p-2 md:pr-0" src="@/assets/close.svg" width="40" height="40" />
-          </button>
-        </div> -->
+    <div class="flex md:hidden">
+      <button id="hamburger" @click="show()">
+        <img
+          class="toggle block"
+          src="@/assets/menu.svg"
+          width="40"
+          height="40"
+        />
+        <img
+          class="toggle hidden p-2 md:pr-0"
+          src="@/assets/close.png"
+          width="40"
+          height="40"
+        />
+      </button>
+    </div>
 
     <div
       class="font-bold md:font-normal links toggle hidden md:flex w-full md:w-auto text-center text-bold mt-5 md:mt-0 md:border-none"
@@ -44,8 +54,6 @@
 </template>
 
 <script>
-// import { gsap } from "gsap";
-
 export default {
   name: "Home",
   components: {},
