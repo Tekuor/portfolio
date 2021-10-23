@@ -5,7 +5,7 @@
     <div class="lg:mr-14 lg:ml-12 lg:w-2/5">
       <p class="contact-heading lg:text-left text-center">Contact me</p>
     </div>
-    <div class="w-2/5">
+    <div class="lg:w-2/5">
       <form name="contact">
         <div class="contact-div p-8">
           <input
