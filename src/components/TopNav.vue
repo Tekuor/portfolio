@@ -9,8 +9,8 @@
         <img
           class="toggle block"
           src="@/assets/menu.svg"
-          width="40"
-          height="40"
+          width="30"
+          height="30"
         />
         <img
           class="toggle hidden p-2 md:pr-0"
