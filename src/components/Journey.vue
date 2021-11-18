@@ -1,10 +1,7 @@
 <template>
-  <div class="text-white py-14">
-    <div class="flex flex-col">
-      <div class="w-full h-auto">
-        <h1 class="section-heading text-center">About me</h1>
-      </div>
-      <div class="md:px-40 journey-text h-auto md:-mt-32 px-8">
+  <div class="text-white py-14 w-full flex flex-col items-center">
+    <div class="md:w-3/4 w-full">
+      <div class="journey-text h-auto md:text-left text-center">
         <p>
           Hi, I'm Gifty Matekuor Mate-Kole - a full stack developer from Ghana.
           I love creating apps that make processes simpler and have a positive
@@ -16,7 +13,7 @@
           apps. Through these experiences and taking online courses, I have
           acquired knowledge in Javascript, PHP and other languages and
           frameworks listed in my
-          <span class="cursor-pointer underline" style="color: #D65CD6"
+          <span class="cursor-pointer" style="color: #D65CD6"
             ><a @click="goto('stack')">tech stack</a></span
           >. I also have some experience building hybrid mobile apps with
           Nativescript-Vue.
@@ -51,7 +48,7 @@ export default {
 
 .journey-text {
   font-weight: 300;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 @media only screen and (max-width: 800px) {

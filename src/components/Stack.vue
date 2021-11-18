@@ -1,13 +1,12 @@
 <template>
-  <div class="text-white pt-14 pb-36" style="position: relative;">
-    <div class="flex flex-col">
-      <div class="w-full h-auto">
-        <h1 class="stack-heading text-center">Stack & Tools</h1>
-      </div>
-
-      <div class="h-auto lg:-mt-9 flex flex-row justify-center">
+  <div
+    class="text-white pt-14 pb-36 w-full flex flex-col items-center"
+    style="position: relative;"
+  >
+    <div class="md:w-3/4 w-full">
+      <div class="h-auto flex flex-row">
         <div
-          class="lg:mx-40 mx-4 stack-div flex lg:flex-row flex-col lg:items-start items-center"
+          class="md:mx-4 stack-div flex lg:flex-row flex-col lg:items-start items-center"
         >
           <div
             class="lg:w-2/5 lg:mt-56 lg:ml-14 lg:mr-8 mt-4 mx-4 lg:mb-0 mb-14 lg:text-left text-center"

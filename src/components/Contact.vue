@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="flex lg:flex-row flex-col md-mx-16 mx-0 pb-20 flex-wrap items-center"
-  >
-    <div class="lg:mr-14 lg:ml-12 lg:w-2/5">
-      <p class="contact-heading lg:text-left text-center">Contact me</p>
-    </div>
+  <div class="flex w-full flex flex-col items-center">
     <div class="lg:w-2/5">
       <form name="contact">
         <div class="contact-div p-8">

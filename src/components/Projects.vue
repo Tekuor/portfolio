@@ -1,111 +1,104 @@
 <template>
-  <div class="text-white py-14">
-    <div class="flex flex-col">
-      <div class="w-full h-auto" data-aos="fade-right">
-        <h1 class="section-heading text-center">Projects</h1>
-      </div>
-      <div
-        class="lg:px-40 journey-text h-auto lg:-mt-24 flex flex-col items-center"
-      >
-        <div class="flex lg:flex-row flex-col justify-center">
-          <div
-            class="project-card lg:mr-12 lg:mb-0 mb-10"
-            style="background: #fcddec;"
-          >
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                >Live Demo</a
-              >
-              <a
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                >Code</a
-              >
-            </div>
-
-            <div class="project-image mx-6 mt-14"></div>
+  <div class="text-white py-14 w-full flex flex-col items-center">
+    <div class="md:w-3/4 w-full">
+      <div class="flex lg:flex-row flex-col justify-center">
+        <div
+          class="project-card lg:mr-12 lg:mb-0 mb-10"
+          style="background: #fcddec;"
+        >
+          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
+          <p class="mt-2 mx-6 project-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex flex-row mx-6 mt-4">
+            <a
+              class="project-button p-2 cursor-pointer"
+              style="background:#9e71fc"
+              >Live Demo</a
+            >
+            <a
+              class="project-button p-2 ml-4 cursor-pointer"
+              style="background: #D65CD6"
+              >Code</a
+            >
           </div>
 
-          <div class="project-card" style="background: #F0DDFC;">
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                href="https://unsplash-g.herokuapp.com/"
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                target="_blank"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Tekuor/unsplash"
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-
-            <div class="project-image mx-6 mt-14"></div>
-          </div>
+          <div class="project-image mx-6 mt-14"></div>
         </div>
 
-        <div class="flex lg:flex-row flex-col mt-12 justify-center">
-          <div
-            class="project-card lg:mr-12 lg:mb-0 mb-10"
-            style="background: #FCF5DD;"
-          >
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                >Live Demo</a
-              >
-              <a
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                >Code</a
-              >
-            </div>
-
-            <div class="project-image mx-6 mt-14"></div>
+        <div class="project-card" style="background: #F0DDFC;">
+          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
+          <p class="mt-2 mx-6 project-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex flex-row mx-6 mt-4">
+            <a
+              href="https://unsplash-g.herokuapp.com/"
+              class="project-button p-2 cursor-pointer"
+              style="background:#9e71fc"
+              target="_blank"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Tekuor/unsplash"
+              class="project-button p-2 ml-4 cursor-pointer"
+              style="background: #D65CD6"
+              target="_blank"
+              >Code</a
+            >
           </div>
-          <div class="project-card" style="background: #EEFCDD;">
-            <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-            <p class="mt-2 mx-6 project-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="flex flex-row mx-6 mt-4">
-              <a
-                class="project-button p-2 cursor-pointer"
-                style="background:#9e71fc"
-                >Live Demo</a
-              >
-              <a
-                class="project-button p-2 ml-4 cursor-pointer"
-                style="background: #D65CD6"
-                >Code</a
-              >
-            </div>
 
-            <div class="project-image mx-6 mt-14"></div>
+          <div class="project-image mx-6 mt-14"></div>
+        </div>
+      </div>
+
+      <div class="flex lg:flex-row flex-col mt-12 justify-center">
+        <div
+          class="project-card lg:mr-12 lg:mb-0 mb-10"
+          style="background: #FCF5DD;"
+        >
+          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
+          <p class="mt-2 mx-6 project-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex flex-row mx-6 mt-4">
+            <a
+              class="project-button p-2 cursor-pointer"
+              style="background:#9e71fc"
+              >Live Demo</a
+            >
+            <a
+              class="project-button p-2 ml-4 cursor-pointer"
+              style="background: #D65CD6"
+              >Code</a
+            >
           </div>
+
+          <div class="project-image mx-6 mt-14"></div>
+        </div>
+        <div class="project-card" style="background: #EEFCDD;">
+          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
+          <p class="mt-2 mx-6 project-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="flex flex-row mx-6 mt-4">
+            <a
+              class="project-button p-2 cursor-pointer"
+              style="background:#9e71fc"
+              >Live Demo</a
+            >
+            <a
+              class="project-button p-2 ml-4 cursor-pointer"
+              style="background: #D65CD6"
+              >Code</a
+            >
+          </div>
+
+          <div class="project-image mx-6 mt-14"></div>
         </div>
       </div>
     </div>
