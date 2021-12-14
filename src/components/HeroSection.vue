@@ -340,7 +340,7 @@ export default {
       });
     },
     saveAudio() {
-      fetch(`http://localhost:8000/upload`, {
+      fetch(`https://tekuor-api.herokuapp.com/upload`, {
         method: "POST",
         body: this.formData,
       })
@@ -358,7 +358,7 @@ export default {
         });
     },
     getRecordings() {
-      fetch(`http://localhost:8000/get-files`, {
+      fetch(`https://tekuor-api.herokuapp.com/get-files`, {
         method: "GET",
       })
         .then((response) => response.json())
