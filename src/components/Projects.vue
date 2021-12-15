@@ -6,15 +6,16 @@
           class="project-card lg:mr-12 lg:mb-0 mb-10"
           style="background: #fcddec;"
         >
-          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-          <p class="mt-2 mx-6 project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h4 class="project-heading mx-6 mt-8">Tweeter</h4>
+          <p class="mt-2 mx-6 project-text h-16">
+            A clone of twitter. Built with Vue js (In Progress)
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
+              href="https://tweeter-g.herokuapp.com/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
+              target="_blank"
               >Live Demo</a
             >
             <a
@@ -24,7 +25,13 @@
             >
           </div>
 
-          <div class="project-image mx-6 mt-14"></div>
+          <div
+            class="project-image mx-6 mt-16"
+            v-bind:style="{
+              'background-image':
+                'url(' + require('../assets/tweeter.png') + ')',
+            }"
+          ></div>
         </div>
 
         <div class="project-card" style="background: #F0DDFC;">
@@ -144,6 +151,10 @@ export default {};
   height: 300px;
   background: #ebebeb;
   border-radius: 8px 8px 0px 0px;
+  background-size: 100%, 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 700px) {
