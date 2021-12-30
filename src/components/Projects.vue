@@ -3,12 +3,13 @@
     <div class="md:w-3/4 w-full">
       <div class="flex lg:flex-row flex-col justify-center">
         <div
-          class="project-card lg:mr-12 lg:mb-0 mb-10"
+          class="project-card lg:mr-12 lg:mb-0 mb-10 w-full"
           style="background: #fcddec;"
         >
           <h4 class="project-heading mx-6 mt-8">Tweeter</h4>
           <p class="mt-2 mx-6 project-text h-16">
-            A clone of twitter. Built with Vue js (In Progress)
+            A clone of twitter. Built with Vue js, Buefy and Tailwind Css (In
+            Progress)
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
@@ -34,22 +35,23 @@
           ></div>
         </div>
 
-        <div class="project-card" style="background: #F0DDFC;">
-          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
+        <div class="project-card w-full" style="background: #F0DDFC;">
+          <h4 class="project-heading mx-6 mt-8">Casting Agency</h4>
           <p class="mt-2 mx-6 project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            A project to help manage and assign actors to movies. Frontend was
+            vuilt with Vue js, Buefy and Tailwind Css. Backend was built with
+            Python.
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
-              href="https://unsplash-g.herokuapp.com/"
+              href="https://casting-agency21.herokuapp.com/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
               target="_blank"
               >Live Demo</a
             >
             <a
-              href="https://github.com/Tekuor/unsplash"
+              href="https://github.com/Tekuor/capstone#casting-agency"
               class="project-button p-2 ml-4 cursor-pointer"
               style="background: #D65CD6"
               target="_blank"
@@ -73,8 +75,10 @@
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
+              href="https://investmentcalculator.netlify.app/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
+              target="_blank"
               >Live Demo</a
             >
             <a
@@ -118,7 +122,7 @@ export default {};
 
 <style>
 .project-card {
-  max-width: 445px;
+  /* max-width: 445px; */
   min-height: 559px;
   border-radius: 16px;
 }
