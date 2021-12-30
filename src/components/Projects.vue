@@ -27,19 +27,24 @@
           </div>
 
           <div
-            class="project-image mx-6 mt-16"
-            v-bind:style="{
-              'background-image':
-                'url(' + require('../assets/tweeter.png') + ')',
-            }"
-          ></div>
+            class="flex flex-col items-center w-full h-full mt-16 mx-auto"
+            style="max-width: 381px; height: 300px;"
+          >
+            <div
+              class="project-image bg-green-400 w-full h-full"
+              v-bind:style="{
+                'background-image':
+                  'url(' + require('../assets/tweeter.png') + ')',
+              }"
+            ></div>
+          </div>
         </div>
 
         <div class="project-card w-full" style="background: #F0DDFC;">
           <h4 class="project-heading mx-6 mt-8">Casting Agency</h4>
           <p class="mt-2 mx-6 project-text">
             A project to help manage and assign actors to movies. Frontend was
-            vuilt with Vue js, Buefy and Tailwind Css. Backend was built with
+            built with Vue js, Buefy and Tailwind Css. Backend was built with
             Python.
           </p>
           <div class="flex flex-row mx-6 mt-4">
@@ -63,19 +68,19 @@
         </div>
       </div>
 
-      <div class="flex lg:flex-row flex-col mt-12 justify-center">
+      <div class="flex lg:flex-row flex-col justify-center mt-12">
         <div
-          class="project-card lg:mr-12 lg:mb-0 mb-10"
+          class="project-card lg:mr-12 lg:mb-0 mb-10 w-full"
           style="background: #FCF5DD;"
         >
-          <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-          <p class="mt-2 mx-6 project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h4 class="project-heading mx-6 mt-8">Investment Calculator</h4>
+          <p class="mt-2 mx-6 project-text h-16">
+            Investment calculator to help determine how much your money will
+            grow. Built with Vue js
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
-              href="https://investmentcalculator.netlify.app/"
+              href="https://tweeter-g.herokuapp.com/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
               target="_blank"
@@ -88,23 +93,40 @@
             >
           </div>
 
-          <div class="project-image mx-6 mt-14"></div>
+          <!-- <div
+            class="flex flex-col items-center w-full h-full mt-16 mx-auto"
+            style="max-width: 381px; height: 300px;"
+          >
+            <div
+              class="project-image bg-green-400 w-full h-full"
+              v-bind:style="{
+                'background-image':
+                  'url(' + require('../assets/tweeter.png') + ')',
+              }"
+            ></div>
+          </div> -->
         </div>
-        <div class="project-card" style="background: #EEFCDD;">
+
+        <div class="project-card w-full" style="background: #EEFCDD;">
           <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
           <p class="mt-2 mx-6 project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            A project to help manage and assign actors to movies. Frontend was
+            built with Vue js, Buefy and Tailwind Css. Backend was built with
+            Python.
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
+              href="https://casting-agency21.herokuapp.com/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
+              target="_blank"
               >Live Demo</a
             >
             <a
+              href="https://github.com/Tekuor/capstone#casting-agency"
               class="project-button p-2 ml-4 cursor-pointer"
               style="background: #D65CD6"
+              target="_blank"
               >Code</a
             >
           </div>
@@ -151,8 +173,6 @@ export default {};
 }
 
 .project-image {
-  max-width: 381px;
-  height: 300px;
   background: #ebebeb;
   border-radius: 8px 8px 0px 0px;
   background-size: 100%, 100%;
