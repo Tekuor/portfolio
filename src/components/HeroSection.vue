@@ -51,7 +51,9 @@
                   <img class="ml-2 mt-2 " src="@/assets/voice.png" />
                 </div>
                 <div class="pl-4 md:mt-1">
-                  <p class="record-text">Record you pronounce my name 😆</p>
+                  <p class="record-text">
+                    Record yourself pronounce my name 😆
+                  </p>
                 </div>
               </div>
             </div>

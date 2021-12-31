@@ -109,21 +109,19 @@
 
         <div class="project-card w-full" style="background: #EEFCDD;">
           <h4 class="project-heading mx-6 mt-8">Recipe Finder</h4>
-          <p class="mt-2 mx-6 project-text">
-            A project to help manage and assign actors to movies. Frontend was
-            built with Vue js, Buefy and Tailwind Css. Backend was built with
-            Python.
+          <p class="mt-2 mx-6 project-text h-16">
+            Recipe finder built with React js and Tailwind Css.
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
-              href="https://casting-agency21.herokuapp.com/"
+              href="https://recipes-react-proj.herokuapp.com/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
               target="_blank"
               >Live Demo</a
             >
             <a
-              href="https://github.com/Tekuor/capstone#casting-agency"
+              href="https://github.com/Tekuor/recipes"
               class="project-button p-2 ml-4 cursor-pointer"
               style="background: #D65CD6"
               target="_blank"
