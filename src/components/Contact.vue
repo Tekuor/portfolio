@@ -58,13 +58,21 @@ export default {
   },
   methods: {
     sendMessage() {
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwCtBdEW5P8C6s2ET5VwhQMgByzE7zy6WfrhS5YYiiQpC5po_PBcuzZ5rnA4_Ob5algVA/exec";
-      const form = document.forms["contact"];
+      const scriptURL = "https://tekuor-api.herokuapp.com/add-message";
+
+      const data = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
 
       fetch(scriptURL, {
         method: "POST",
-        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       })
         .then(() =>
           alert("Thanks for Contacting us..! We Will Contact You Soon...")
