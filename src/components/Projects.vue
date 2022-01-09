@@ -80,7 +80,7 @@
           </p>
           <div class="flex flex-row mx-6 mt-4">
             <a
-              href="https://tweeter-g.herokuapp.com/"
+              href="https://investmentcalculator.netlify.app/"
               class="project-button p-2 cursor-pointer"
               style="background:#9e71fc"
               target="_blank"
