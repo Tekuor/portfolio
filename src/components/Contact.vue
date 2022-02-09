@@ -34,6 +34,7 @@
           ></textarea>
 
           <button
+            v-if="!loading"
             @click="sendMessage"
             id="sendBtn"
             class="mt-6 w-full"
@@ -41,6 +42,9 @@
           >
             Send
           </button>
+          <div v-else class="flex flex-col items-center mt-6">
+            <img class="w-12 h-12" src="../assets/loader.svg" />
+          </div>
         </div>
       </form>
     </div>
@@ -54,11 +58,13 @@ export default {
       name: "",
       email: "",
       message: "",
+      loading: false,
     };
   },
   methods: {
     sendMessage() {
-      const scriptURL = "https://tekuor-api.herokuapp.com/add-message";
+      this.loading = true;
+      const scriptURL = "http://localhost:8000/add-message";
 
       const data = {
         name: this.name,
@@ -74,10 +80,18 @@ export default {
         },
         body: JSON.stringify(data),
       })
-        .then(() =>
-          alert("Thanks for Contacting us..! We Will Contact You Soon...")
-        )
-        .catch((error) => console.error("Error!", error.message));
+        .then(() => {
+          this.name = "";
+          this.email = "";
+          this.message = "";
+
+          this.$notify({
+            title: "Message Sent!",
+            text: "Thanks for leaving a message. I will contact you soon.",
+          });
+        })
+        .catch((error) => console.error("Error!", error.message))
+        .finally(() => (this.loading = false));
     },
   },
 };
