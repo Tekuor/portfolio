@@ -63,35 +63,43 @@ export default {
   },
   methods: {
     sendMessage() {
-      this.loading = true;
-      const scriptURL = "http://localhost:8000/add-message";
+      if (this.validForm) {
+        this.loading = true;
+        const scriptURL = "http://localhost:8000/add-message";
 
-      const data = {
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      };
+        const data = {
+          name: this.name,
+          email: this.email,
+          message: this.message,
+        };
 
-      fetch(scriptURL, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then(() => {
-          this.name = "";
-          this.email = "";
-          this.message = "";
-
-          this.$notify({
-            title: "Message Sent!",
-            text: "Thanks for leaving a message. I will contact you soon.",
-          });
+        fetch(scriptURL, {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         })
-        .catch((error) => console.error("Error!", error.message))
-        .finally(() => (this.loading = false));
+          .then(() => {
+            this.name = "";
+            this.email = "";
+            this.message = "";
+
+            this.$notify({
+              title: "Message Sent!",
+              text:
+                "Thanks for leaving a message. I will get back to you soon.",
+            });
+          })
+          .catch((error) => console.error("Error!", error.message))
+          .finally(() => (this.loading = false));
+      }
+    },
+  },
+  computed: {
+    validForm: function() {
+      return this.name && this.message && this.email;
     },
   },
 };
