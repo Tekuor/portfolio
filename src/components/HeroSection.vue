@@ -14,9 +14,11 @@
             class="rounded-full h-8 w-8 cursor-pointer"
             style="background: rgba(255, 255, 255, 0.1);"
             @click="playSound(require('../assets/Matekuor.mp3'))"
+            v-if="!playingSound"
           >
             <img class="ml-1 mt-1" src="@/assets/volumeDown.png" />
           </div>
+          <img class="h-7 w-7 mt-2 ml-2" src="@/assets/loader.svg" v-else />
           <div class="pl-8">
             <p class="name">Matekuor</p>
             <p>/məˌtɪəˌkʊə/</p>
@@ -60,7 +62,12 @@
 
             <div class="md:mt-5 mt-4">
               <p class="audio-text">
-                <span style="color: #D65CD6; font-weight: bold">Listen</span>
+                <span
+                  @click="listen()"
+                  class="cursor-pointer"
+                  style="color: #D65CD6; font-weight: bold"
+                  >Listen</span
+                >
                 to how others butchered my name
               </p>
             </div>
@@ -103,16 +110,24 @@
               </p>
             </div>
             <div class="recordings-div flex flex-col items-center pt-8">
-              <audio
-                controls
-                :src="recording.secure_url"
-                :key="index"
-                class="mb-8"
-                v-for="(recording, index) in recordedFiles"
+              <div v-show="!recordingsLoading">
+                <audio
+                  controls
+                  :src="recording.secure_url"
+                  :key="index"
+                  class="mb-8"
+                  v-for="(recording, index) in recordedFiles"
+                >
+                  Your browser does not support the
+                  <code>audio</code> element.
+                </audio>
+              </div>
+              <div
+                class="flex flex-col items-center"
+                v-show="recordingsLoading"
               >
-                Your browser does not support the
-                <code>audio</code> element.
-              </audio>
+                <img src="@/assets/loader.svg" class="w-20 h-20" />
+              </div>
             </div>
           </div>
           <div v-else class="flex flex-col items-center mt-8">
@@ -167,7 +182,7 @@
                 <code>audio</code> element.
               </audio>
 
-              <div class="flex flex-row mt-8">
+              <div class="flex flex-row mt-8" v-if="!savingAudio">
                 <button
                   class="discard-btn px-4 text-white font-semibold"
                   type="button"
@@ -182,6 +197,9 @@
                 >
                   Save
                 </button>
+              </div>
+              <div class="flex flex-col items-center" v-else>
+                <img src="@/assets/loader.svg" class="h-8 w-8" />
               </div>
             </div>
 
@@ -234,9 +252,15 @@
                   class="rounded-full h-8 w-9 cursor-pointer"
                   style="background: rgba(255, 255, 255, 0.1);"
                   @click="playSound(require('../assets/Matekuor.mp3'))"
+                  v-if="!playingSound"
                 >
                   <img class="ml-1 mt-1" src="@/assets/volumeDown.png" />
                 </div>
+                <img
+                  class="h-7 w-7 mt-2 ml-2"
+                  src="@/assets/loader.svg"
+                  v-else
+                />
                 <div class="pl-8">
                   <p class="name">Matekuor</p>
                   <p class="pronunciation">/məˌtɪəˌkʊə/</p>
@@ -278,6 +302,8 @@ export default {
       formData: {},
       recordedFiles: [],
       showRecordings: false,
+      playingSound: false,
+      savingAudio: false,
     };
   },
   methods: {
@@ -289,16 +315,27 @@ export default {
       this.$modal.hide("example");
     },
     playSound(sound) {
+      this.playingSound = true;
       if (sound) {
-        var audio = new Audio(sound);
+        let audio = new Audio(sound);
         audio.play();
+
+        audio.addEventListener("ended", () => {
+          this.playingSound = false;
+        });
       }
+    },
+    listen() {
+      this.showRecordings = true;
+      this.getRecordings();
+      this.showModal();
     },
     reset() {
       this.saved = false;
       this.discarded = false;
       this.recorded = false;
       this.recording = false;
+      this.showRecordings = false;
     },
     record() {
       navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
@@ -342,6 +379,7 @@ export default {
       });
     },
     saveAudio() {
+      this.savingAudio = true;
       fetch(`https://tekuor-api.herokuapp.com/upload`, {
         method: "POST",
         body: this.formData,
@@ -357,26 +395,24 @@ export default {
           this.recording = false;
           this.saved = true;
           this.file = "";
+          this.savingAudio = false;
         });
     },
     getRecordings() {
+      this.showRecordings = true;
+      this.recordingsLoading = true;
       fetch(`https://tekuor-api.herokuapp.com/get-files`, {
         method: "GET",
       })
         .then((response) => response.json())
         .then((result) => {
-          console.log("Success:", result.response.resources);
           this.recordedFiles = result.response.resources;
-          this.showRecordings = true;
+          this.recordingsLoading = false;
         })
         .catch((error) => {
           console.error("Error:", error);
         })
-        .finally(() => {
-          // this.recording = false;
-          // this.saved = true;
-          // this.file = "";
-        });
+        .finally(() => {});
     },
     discardAudio() {
       this.recording = false;
