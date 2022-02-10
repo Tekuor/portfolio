@@ -543,10 +543,6 @@ export default {
   color: #d65cd6;
 }
 
-audio::-webkit-media-controls-panel {
-  /* background-color: #56AEFF; */
-}
-
 .recordings-div {
   position: static;
   width: 406px;
