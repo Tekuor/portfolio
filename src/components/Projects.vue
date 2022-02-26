@@ -1,5 +1,8 @@
 <template>
-  <div class="text-white py-14 w-full flex flex-col items-center">
+  <div
+    class="text-white py-14 w-full flex flex-col items-center"
+    style="max-width: 1200px"
+  >
     <div class="md:w-3/4 w-full">
       <div class="flex lg:flex-row flex-col justify-center">
         <div

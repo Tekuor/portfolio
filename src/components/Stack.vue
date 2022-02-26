@@ -1,7 +1,7 @@
 <template>
   <div
     class="text-white pt-14 pb-36 w-full flex flex-col items-center"
-    style="position: relative;"
+    style="position: relative;max-width: 1200px"
   >
     <div class="md:w-3/4 w-full">
       <div class="h-auto flex flex-row">

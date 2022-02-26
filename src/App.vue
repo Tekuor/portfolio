@@ -3,8 +3,12 @@
     <TopNav @goto="goto" />
     <HeroSection id="hero" class="mb-20" />
     <Journey id="journey" @goto="goto" class="mb-20" />
-    <Projects id="projects" class="mb-20" />
-    <Stack id="stack" class="mb-20" />
+    <div class="flex flex-col items-center">
+      <Projects id="projects" class="mb-20" />
+    </div>
+    <div class="flex flex-col items-center">
+      <Stack id="stack" class="mb-20" />
+    </div>
     <Contact id="contact" class="pb-40" />
 
     <footer class="w-full py-10 text-white">
