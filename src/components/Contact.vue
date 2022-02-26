@@ -65,7 +65,7 @@ export default {
     sendMessage() {
       if (this.validForm) {
         this.loading = true;
-        const scriptURL = "http://localhost:8000/add-message";
+        const scriptURL = "https://tekuor-api.herokuapp.com";
 
         const data = {
           name: this.name,
