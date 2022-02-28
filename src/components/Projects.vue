@@ -34,7 +34,7 @@
             style="max-width: 381px; height: 300px;"
           >
             <div
-              class="project-image bg-green-400 w-full h-full"
+              class="project-image w-full h-full"
               v-bind:style="{
                 'background-image':
                   'url(' + require('../assets/tweeter.png') + ')',
